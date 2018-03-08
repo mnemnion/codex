@@ -29,7 +29,7 @@ These are woven and knitted into `/doc` and `/src`, respectively.
 
 ## /src
 
-    `/src` is short for sorcery. 
+`/src` is short for sorcery. 
 
   The important thing to know about the `/src` directory, is that Genesis 
 considers it the home directory. 
