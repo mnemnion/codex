@@ -81,12 +81,14 @@ compilation targets rather than text formats per se.
 
 The root for an html weave of Genesis could be expected to be found at `/genesis/doc/html/genesis.html`, and so forth. 
 
+
 ## /etc
 
   Is the first example of an optional codex directory.  It's always good to
 have a junk drawer.  Think of it as a lightweight container for assets.  If
 a codex just needs a few binaries of the non-executable variety, toss them in
 here.
+
 
 ### etc etc
 
@@ -105,9 +107,31 @@ appropriate. `/tmp` and `/log`, naturally, will show up from time to time.
 I should probably add some kind of dotfile at the root without which the
 bettertools will refuse to recursively mangle a filesystem.  Hmm.
 
+
 ## (assert is-codex?)
 
-If a directory has an `/orb` directory, a `/src`  directory, a `/lib`
+  If a directory has an `/orb` directory, a `/src`  directory, a `/lib`
 directory, and a `/src/lib` directory, and the `/src/lib` and `/lib` 
 directories are the same entity, my tools will conclude they are in a 
 familiar environment and... do things. 
+
+
+### grym files
+
+`bridge` shouldn't absolutely require that a codex-compliant directory
+involve `grym` in any capacity.  Nor will it ignore that 99% of such
+directories will be.
+
+The additional criteria are a `.grymrc` file at the root, and that's it.
+a `/.grym` directory is reserved but I intend that simple Grimoires won't
+require, create, or use it. 
+
+These aren't part of the core assertion because I want to support putting 
+an existing project in the sorcery drawer, adding an `/orb` and `/lib`
+and purling a `/src/lib` to please the djinn, and letting that work.
+
+There is no need in such an instance to pretend the sorcery emanates from 
+the orb.  
+
+
+
