@@ -214,6 +214,8 @@ which might look like this, where `.` indicates a directory has no files:
     - RSS.xml
 ```
 
+Look at what we don't have: any `/src` sorcery, `/lib` dependencies, or a `fodder` main file.  All of these are optional. 
+
 
 ### etc etc
 
