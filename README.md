@@ -4,7 +4,7 @@
   The codex format is how bridge expects to find a useful ingenium to be
 organized. 
 
-The structure is deliberately simple.  Let us say we are writing an ingenium called Genesis.  We might have a structure like so:
+The structure is [deliberately simple](#assert-is-codex).  Let us say we are writing an ingenium called Genesis.  We might have a structure like so:
 
 ```
 - /genesis
