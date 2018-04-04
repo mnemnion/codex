@@ -256,13 +256,12 @@ Any other condition, particularly `/src/lib` being a literal directory while
 `bridge` shouldn't absolutely require that a codex-compliant directory
 involve `grym` in any capacity.  This is still the normal state of affairs.
 
-The additional criteria are a `.grymrc` file at the root, and that's it.
-a `/.grym` directory is reserved but I intend that simple Grimoires won't
-require, create, or use it. 
+The additional criteria are a `.grymrc` file at the root, and that's it. 
+A `/.grym` directory is also reserved. 
 
 These aren't part of the core assertion because I want to support putting 
 an existing project in the sorcery drawer, adding an `/orb` and `/lib`
 and purling a `/src/lib` to please the djinn, and letting that work.
 
 There is no need in such an instance to pretend the sorcery emanates from 
-the orb.  
+the orb.  It may be enfolded or not, at leisure. 
