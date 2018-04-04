@@ -12,7 +12,7 @@ The structure is deliberately simple.  Let us say we are writing an ingenium cal
   - /src
   - /doc
   - /lib
-  - /etc
+  - /etc  
   - genesis
 ```
 
