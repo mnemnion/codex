@@ -159,12 +159,12 @@ There should be no assumption that directories under `/lib` are symlinks,
 nor, if they happen to be, that they are codex `/src` directories under
 their project name. 
 
+
 ## doc
 
-  This contains the weave or weaves.  This is itself an opinionate use of HTML
+  This contains the weave or weaves.  This is itself an opinionated use of HTML
 and friends.  A back end responsible for assembling some web view can stick its
-product anywhere it chooses (I have a notion for where); if it's in codex
-format the documentation view of the source code will go here.
+product anywhere it chooses; if it's in codex format, the documentation view of the source code will go here.
 
 The subdirectories of `/doc` have names like `/html`, `/md`, or `/pdf`. These
 are the main suffixes you would expect to find, to be sure, but refer to 
@@ -179,6 +179,40 @@ The root for an html weave of Genesis could be expected to be found at `/genesis
 have a junk drawer.  Think of it as a lightweight container for assets.  If
 a codex just needs a few binaries of the non-executable variety, toss them in
 here.
+
+## out
+
+  `/out` is likely enough to recur to deserve its own section.  Mostly to 
+emphasize that a codex which consists mostly of prose might have a weave
+prepared so as to be consumed by another program, as is usual in static or
+other site generation.  This would be in `/out`, while the various `/doc`
+weaves are intended for a pre-compilation view of the raw content.
+
+Things like RSS feeds, temporal views, tag enhancement, search bars,
+anything of that nature. 
+
+One may envision a project folder `/fodder` which has only blog posts in it,
+which might look like this, where `.` indicates a directory has no files:
+
+```
+- /fodder
+  /orb
+  - a-post.orb
+  - another-post.orb
+  /src
+    /lib ↻
+    - .
+  /lib
+    - .
+  /doc
+    /html
+      - a-post.html
+      - another-post.html
+  /out
+    - 2018-4-1-a-post.yaml
+    - 2017-12-31-another-post.yaml
+    - RSS.xml
+```
 
 
 ### etc etc
@@ -206,12 +240,19 @@ directory, and a `/src/lib` directory, and the `/src/lib` and `/lib`
 directories are the same entity, my tools will conclude they are in a 
 familiar environment and... do things. 
 
+There need be no contents.  It's also allowable that both `/src/lib` and
+`/lib` exist provided `/lib` is empty, or even for `/lib` to be the symlink
+to `/src/lib`.
+
+Any other condition, particularly `/src/lib` being a literal directory while
+`/lib` is a different one with contents, is not a codex. 
+
+
 
 ### grym files
 
 `bridge` shouldn't absolutely require that a codex-compliant directory
-involve `grym` in any capacity.  Nor will it ignore that 99% of such
-directories will be.
+involve `grym` in any capacity.  This is still the normal state of affairs.
 
 The additional criteria are a `.grymrc` file at the root, and that's it.
 a `/.grym` directory is reserved but I intend that simple Grimoires won't
@@ -223,6 +264,3 @@ and purling a `/src/lib` to please the djinn, and letting that work.
 
 There is no need in such an instance to pretend the sorcery emanates from 
 the orb.  
-
-
-
