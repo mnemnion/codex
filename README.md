@@ -49,6 +49,11 @@ In order to support the delicate operation of wrapping existing codebases
 into codex format, `/src` can be the only source of truth. In this case
 the `/orb` directory will either be empty, or contain only dotfiles. 
 
+A corrolary of this is that `/src/lib`, discussed below, does not have
+to follow the format described here.  It *should*, mind you.  Using `grym`
+to provide a shallow wrapper around the format is not recondite unless your
+tooling is allergic to symlinks. 
+
 
 ## lib
 
@@ -149,6 +154,9 @@ In addition, `/genesis` may be expanded thus:
 practice.  If directories in `/lib` are themselves in codex format this
 may be readily checked and taken advantage of.
 
+There should be no assumption that directories under `/lib` are symlinks,
+nor, if they happen to be, that they are codex `/src` directories under
+their project name. 
 
 ## doc
 
