@@ -29,10 +29,11 @@ These are woven and knitted into `/doc` and `/src`, respectively.
 
 ## /src
 
-`/src` is short for sorcery. 
+`/src` is short for sorcery, the source is in `/orb`.  We call the source to
+sorcery transition a knit. 
 
   The important thing to know about the `/src` directory, is that Genesis 
-considers it the home directory. 
+considers it the home directory at runtime. 
 
 It's where the code to run is kept, in whatever arrangement is useful to
 the runtime, once it has been knitted out of the `/orb` directory by `grym`.
@@ -53,7 +54,7 @@ One reason is that "src/lib" is a simple literal string, while "../lib" is a
 description, with a verb, `..`, that is appreciably harder to reason about. 
 
 Another is that it's a brown M & M. One way to make sure you don't make poor
-assumptions about filesystems being acyclic is to make a mandatory cycle part
+assumptions about filesystems being literal is to make a mandatory symlink part
 of the description format for programs.
 
 In the end, I want `/lib` and `/src/lib`, and I want them to be identical, so
@@ -64,8 +65,76 @@ to them or affect them.
 
 Quirks are useful.  There's not much bandwidth in a filesystem with which to 
 signal. A directory called `/lib` under `/src` could be anything, if it
-resolves to the same absolute path as `../lib`, the liklihood we're dealing
+resolves to the same absolute path as `../lib`, the likelihood we're dealing
 with a codex goes up. 
+
+
+### A further subtlety of /lib
+
+Let us say we have a library, also in codex, which is called `numbers`. It
+would have a format such as this:
+
+```
+- /numbers
+  - /orb
+  - /src
+    - numbers.ext
+  - /doc
+  - /lib
+  - /etc
+  - numbers
+
+```
+
+In order to provide this as a library to `genesis`, we create a symlink in
+this fashion, presuming that `.` contains both directories:
+
+```sh
+ln -s ./numbers/src/ ./genesis/lib/numbers
+```
+
+With this result:
+
+```
+- /genesis
+  - /orb
+  - /src
+  - /doc
+  - /lib
+    - /numbers
+      - numbers.ext
+  - /etc
+  - genesis
+```
+
+This allows `require` and friends to refer simply to "numbers", or if this is locally shadowed, "lib/numbers". 
+
+Note that we intend to write a friendly tool, `manifest`, which will automate,
+or at least smooth out, this process. 
+
+For now, let's note some of the advantages of this approach.  One may readily
+pin a library, provided some snapshot revision control system such as `git`,
+by simply symlinking to the blob in question.
+
+In addition, `/genesis` may be expanded thus:
+
+```
+- /genesis
+  - /orb
+  - /src
+  - /doc
+  - /lib
+    - /numbers
+      - /lib
+      - numbers.ext
+  - /etc
+  - genesis
+```
+
+`./genesis/lib/numbers/lib`, followed, puts us in the actual directory
+`./numbers/lib`.  The elision of `/src` is thus fairly well-behaved in
+practice.  If directories in `/lib` are themselves in codex format this
+may be readily checked and taken advantage of.
 
 
 ## /doc
