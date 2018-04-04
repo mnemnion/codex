@@ -20,16 +20,18 @@ We see that we have a directory, five subsidiaries, and an eponymous file.
 
 So far so good. 
 
-## /orb
+## orb
 
-  The orb directory is the source of all truth. It contains Grimoires.
+  The `/orb` directory is the source of all truth. It contains Grimoires.
 
-These are woven and knitted into `/doc` and `/src`, respectively. 
+These are woven and knitted into `/doc` and `/src`, respectively.
+
+It is allowable for the `/orb` directory to be empty. 
 
 
-## /src
+## src
 
-`/src` is short for sorcery, the source is in `/orb`.  We call the source to
+`/src` is short for sorcery.  The source is in `/orb`.  We call the source to
 sorcery transition a knit. 
 
   The important thing to know about the `/src` directory, is that Genesis 
@@ -43,8 +45,12 @@ format is `name/name`, for a library, an alternative is `name/src/name/`,
 and/or `name/src/name.ext`.  This is handy for codicies which happen to be
 both.
 
+In order to support the delicate operation of wrapping existing codebases
+into codex format, `/src` can be the only source of truth. In this case
+the `/orb` directory will either be empty, or contain only dotfiles. 
 
-## /lib
+
+## lib
 
   All dependencies for `/src` are to be found at `/src/lib/`, a symlink to
 `/lib`.  This is a subtlety.  `/lib` itself has one directory per dependency,
