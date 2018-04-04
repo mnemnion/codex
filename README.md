@@ -61,7 +61,8 @@ description, with a verb, `..`, that is appreciably harder to reason about.
 
 Another is that it's a brown M & M. One way to make sure you don't make poor
 assumptions about filesystems being literal is to make a mandatory symlink part
-of the description format for programs.
+of the description format for programs.  It gives `bridge` tools something to
+look for, when deciding what to do.
 
 In the end, I want `/lib` and `/src/lib`, and I want them to be identical, so
 that's how it is. Since `/src` is the base directory from the code's 
@@ -73,6 +74,9 @@ Quirks are useful.  There's not much bandwidth in a filesystem with which to
 signal. A directory called `/lib` under `/src` could be anything, if it
 resolves to the same absolute path as `../lib`, the likelihood we're dealing
 with a codex goes up. 
+
+Important note: Codices can include circular dependencies, please do not 
+naively search them depth-first. 
 
 
 ### A further subtlety of /lib
