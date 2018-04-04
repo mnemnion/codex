@@ -77,7 +77,7 @@ with a codex goes up.
 
 ### A further subtlety of /lib
 
-Let us say we have a library, also in codex, which is called `numbers`. It
+Let us say we have a library, also in a codex, which is called `numbers`. It
 would have a format such as this:
 
 ```
@@ -105,6 +105,9 @@ With this result:
 - /genesis
   - /orb
   - /src
+    - /lib ↻
+      - /numbers
+        - numbers.ext
   - /doc
   - /lib
     - /numbers
@@ -130,8 +133,8 @@ In addition, `/genesis` may be expanded thus:
   - /src
   - /doc
   - /lib
-    - /numbers
-      - /lib
+    - /numbers ↻
+      - /lib ↻
       - numbers.ext
   - /etc
   - genesis
@@ -143,7 +146,7 @@ practice.  If directories in `/lib` are themselves in codex format this
 may be readily checked and taken advantage of.
 
 
-## /doc
+## doc
 
   This contains the weave or weaves.  This is itself an opinionate use of HTML
 and friends.  A back end responsible for assembling some web view can stick its
@@ -157,7 +160,7 @@ compilation targets rather than text formats per se.
 The root for an html weave of Genesis could be expected to be found at `/genesis/doc/html/genesis.html`, and so forth. 
 
 
-## /etc
+## etc
 
   Is the first example of an optional codex directory.  It's always good to
 have a junk drawer.  Think of it as a lightweight container for assets.  If
