@@ -52,7 +52,8 @@ the `/orb` directory will either be empty, or contain only dotfiles.
 A corrolary of this is that `/src/lib`, discussed below, does not have
 to follow the format described here.  It *should*, mind you.  Using `grym`
 to provide a shallow wrapper around the format is not recondite unless your
-tooling is allergic to symlinks. 
+tooling is allergic to symlinks; `grym invert` is intended to be developed
+enough to sort these issues out before alpha release.
 
 
 ## lib
