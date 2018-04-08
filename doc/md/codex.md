@@ -36,7 +36,7 @@ It is allowable for the ``/orb`` directory to be empty.
 
 ## src
 
-``/src`` is short for sorcery.  The source is in ``/orb``.  We call the source to
+=/src= is short for sorcery.  The source is in ``/orb``.  We call the source to
 sorcery transition a knit. 
 
 
@@ -50,7 +50,7 @@ the runtime, once it has been knitted out of the ``/orb`` directory by ``grym``.
 
 Codices tend to be like libraries or like programs.  For a program, the 
 format is ``name/name``, for a library, an alternative is ``name/src/name/``,
-and_or =name_src/name.ext=.  This is handy for codicies which happen to be
+and/or ``name/src/name.ext``.  This is handy for codicies which happen to be
 both.
 
 
@@ -69,11 +69,11 @@ enough to sort these issues out before alpha release.
 ## lib
 
   All dependencies for ``/src`` are to be found at ``/src/lib/``, a symlink to
-``/lib``.  This is a subtlety.  ``/lib`` itself has one directory per dependency,
+=/lib=.  This is a subtlety.  ``/lib`` itself has one directory per dependency,
 which in a normal bridge install will themselves be symlinks. 
 
 
-One reason is that "src_lib" is a simple literal string, while ".._lib" is a
+One reason is that "src/lib" is a simple literal string, while "../lib" is a
 description, with a verb, ``..``, that is appreciably harder to reason about. 
 
 
@@ -168,8 +168,8 @@ In addition, ``/genesis`` may be expanded thus:
   - genesis
 ```
 
-``./genesis/lib/numbers/lib``, followed, puts us in the actual directory
-``./numbers/lib``.  The elision of ``/src`` is thus fairly well-behaved in
+=./genesis/lib/numbers/lib=, followed, puts us in the actual directory
+=./numbers/lib=.  The elision of ``/src`` is thus fairly well-behaved in
 practice.  If directories in ``/lib`` are themselves in codex format this
 may be readily checked and taken advantage of.
 
@@ -183,7 +183,8 @@ their project name.
 
   This contains the weave or weaves.  This is itself an opinionated use of HTML
 and friends.  A back end responsible for assembling some web view can stick its
-product anywhere it chooses; if it's in codex format, the documentation view of the source code will go here.
+product anywhere it chooses; if it's in codex format, the documentation view of
+the source code will go here.
 
 
 The subdirectories of ``/doc`` have names like ``/html``, ``/md``, or ``/pdf``. These
@@ -191,7 +192,8 @@ are the main suffixes you would expect to find, to be sure, but refer to
 compilation targets rather than text formats per se. 
 
 
-The root for an html weave of Genesis could be expected to be found at ``/genesis/doc/html/genesis.html``, and so forth. 
+The root for an html weave of Genesis could be expected to be found at 
+=/genesis/doc/html/genesis.html=, and so forth. 
 
 
 ## etc
@@ -248,18 +250,18 @@ familiar environment and... do things.
 
 
 There need be no contents.  It's also allowable that both ``/src/lib`` and
-``/lib`` exist provided ``/lib`` is empty, or even for ``/lib`` to be the symlink
+=/lib= exist provided ``/lib`` is empty, or even for ``/lib`` to be the symlink
 to ``/src/lib``.
 
 
 Any other condition, particularly ``/src/lib`` being a literal directory while
-``/lib`` is a different one with contents, is not a codex. 
+=/lib= is a different one with contents, is not a codex. 
 
 
 
 ### grym files
 
-``bridge`` shouldn't absolutely require that a codex-compliant directory
+=bridge= shouldn't absolutely require that a codex-compliant directory
 involve ``grym`` in any capacity.  This is still the normal state of affairs.
 
 

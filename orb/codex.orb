@@ -165,13 +165,15 @@ their project name.
 
   This contains the weave or weaves.  This is itself an opinionated use of HTML
 and friends.  A back end responsible for assembling some web view can stick its
-product anywhere it chooses; if it's in codex format, the documentation view of the source code will go here.
+product anywhere it chooses; if it's in codex format, the documentation view of
+the source code will go here.
 
 The subdirectories of =/doc= have names like =/html=, =/md=, or =/pdf=. These
 are the main suffixes you would expect to find, to be sure, but refer to 
 compilation targets rather than text formats per se. 
 
-The root for an html weave of Genesis could be expected to be found at =/genesis/doc/html/genesis.html=, and so forth. 
+The root for an html weave of Genesis could be expected to be found at 
+=/genesis/doc/html/genesis.html=, and so forth. 
 
 
 ** etc
