@@ -1,0 +1,1493 @@
+digraph hierarchy {
+
+node [fontname=Helvetica]
+edge [style=dashed]
+
+doc_0 [label="doc - 269"]
+
+
+doc_0 -> { section_1}
+{rank=same; section_1}
+
+section_1 [label="section: 1-239"]
+
+
+section_1 -> { header_2 prose_3 prose_4 structure_5 prose_6 section_7 section_8 section_9 section_10 section_11 section_12 section_13}
+{rank=same; header_2 prose_3 prose_4 structure_5 prose_6 section_7 section_8 section_9 section_10 section_11 section_12 section_13}
+
+header_2 [label="1 : Codex format"]
+
+prose_3 [label="prose"]
+
+prose_4 [label="prose"]
+
+structure_5 [label="structure"]
+
+prose_6 [label="prose"]
+
+section_7 [label="section: 24-32"]
+
+section_8 [label="section: 33-59"]
+
+section_9 [label="section: 60-88"]
+
+section_10 [label="section: 164-176"]
+
+section_11 [label="section: 177-183"]
+
+section_12 [label="section: 184-220"]
+
+section_13 [label="section: 240-255"]
+
+
+header_2 -> leaf_14
+leaf_14  [color=Gray,shape=rectangle,fontname=Inconsolata,label="* Codex format"]
+prose_3 -> { raw_15}
+{rank=same; raw_15}
+
+raw_15 [label="raw"]
+
+
+raw_15 -> leaf_16
+leaf_16  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+
+  The codex format is how bridge expects to find a useful ingenium to be
+organized. 
+"]
+prose_4 -> { raw_17}
+{rank=same; raw_17}
+
+raw_17 [label="raw"]
+
+
+raw_17 -> leaf_18
+leaf_18  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+The structure is [deliberately simple](#assert-is-codex).  Let us say we are
+writing an ingenium called Genesis.  We might have a structure like so:
+"]
+structure_5 -> { hashline_19}
+{rank=same; hashline_19}
+
+hashline_19 [label="hashline"]
+
+
+hashline_19 -> { hashtag_20}
+{rank=same; hashtag_20}
+
+hashtag_20 [label="hashtag"]
+
+
+hashtag_20 -> leaf_21
+leaf_21  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+prose_6 -> { raw_22}
+{rank=same; raw_22}
+
+raw_22 [label="raw"]
+
+
+raw_22 -> leaf_23
+leaf_23  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+So far so good. 
+"]
+section_7 -> { header_24 prose_25 prose_26 prose_27}
+{rank=same; header_24 prose_25 prose_26 prose_27}
+
+header_24 [label="2 : orb"]
+
+prose_25 [label="prose"]
+
+prose_26 [label="prose"]
+
+prose_27 [label="prose"]
+
+
+header_24 -> leaf_28
+leaf_28  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** orb"]
+prose_25 -> { raw_29 literal_30 raw_31}
+{rank=same; raw_29 literal_30 raw_31}
+
+raw_29 [label="raw"]
+
+literal_30 [label="literal"]
+
+raw_31 [label="raw"]
+
+
+raw_29 -> leaf_32
+leaf_32  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  The "]
+literal_30 -> leaf_33
+leaf_33  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_31 -> leaf_34
+leaf_34  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory is the source of all truth. It contains Grimoires.
+"]
+prose_26 -> { raw_35 literal_36 raw_37 literal_38 raw_39}
+{rank=same; raw_35 literal_36 raw_37 literal_38 raw_39}
+
+raw_35 [label="raw"]
+
+literal_36 [label="literal"]
+
+raw_37 [label="raw"]
+
+literal_38 [label="literal"]
+
+raw_39 [label="raw"]
+
+
+raw_35 -> leaf_40
+leaf_40  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+These are woven and knitted into "]
+literal_36 -> leaf_41
+leaf_41  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/doc"]
+raw_37 -> leaf_42
+leaf_42  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_38 -> leaf_43
+leaf_43  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_39 -> leaf_44
+leaf_44  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", respectively.
+"]
+prose_27 -> { raw_45 literal_46 raw_47}
+{rank=same; raw_45 literal_46 raw_47}
+
+raw_45 [label="raw"]
+
+literal_46 [label="literal"]
+
+raw_47 [label="raw"]
+
+
+raw_45 -> leaf_48
+leaf_48  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+It is allowable for the "]
+literal_46 -> leaf_49
+leaf_49  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_47 -> leaf_50
+leaf_50  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory to be empty. 
+
+"]
+section_8 -> { header_51 prose_52 prose_53 prose_54 prose_55 prose_56 prose_57}
+{rank=same; header_51 prose_52 prose_53 prose_54 prose_55 prose_56 prose_57}
+
+header_51 [label="2 : src"]
+
+prose_52 [label="prose"]
+
+prose_53 [label="prose"]
+
+prose_54 [label="prose"]
+
+prose_55 [label="prose"]
+
+prose_56 [label="prose"]
+
+prose_57 [label="prose"]
+
+
+header_51 -> leaf_58
+leaf_58  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** src"]
+prose_52 -> { raw_59 literal_60 raw_61 literal_62 raw_63}
+{rank=same; raw_59 literal_60 raw_61 literal_62 raw_63}
+
+raw_59 [label="raw"]
+
+literal_60 [label="literal"]
+
+raw_61 [label="raw"]
+
+literal_62 [label="literal"]
+
+raw_63 [label="raw"]
+
+
+raw_59 -> leaf_64
+leaf_64  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+"]
+literal_60 -> leaf_65
+leaf_65  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_61 -> leaf_66
+leaf_66  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is short for sorcery.  The source is in "]
+literal_62 -> leaf_67
+leaf_67  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_63 -> leaf_68
+leaf_68  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".  We call the source to
+sorcery transition a knit. 
+"]
+prose_53 -> { raw_69 literal_70 raw_71}
+{rank=same; raw_69 literal_70 raw_71}
+
+raw_69 [label="raw"]
+
+literal_70 [label="literal"]
+
+raw_71 [label="raw"]
+
+
+raw_69 -> leaf_72
+leaf_72  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+  The important thing to know about the "]
+literal_70 -> leaf_73
+leaf_73  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_71 -> leaf_74
+leaf_74  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory, is that Genesis 
+considers it the home directory at runtime. 
+"]
+prose_54 -> { raw_75 literal_76 raw_77 literal_78 raw_79}
+{rank=same; raw_75 literal_76 raw_77 literal_78 raw_79}
+
+raw_75 [label="raw"]
+
+literal_76 [label="literal"]
+
+raw_77 [label="raw"]
+
+literal_78 [label="literal"]
+
+raw_79 [label="raw"]
+
+
+raw_75 -> leaf_80
+leaf_80  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+It's where the code to run is kept, in whatever arrangement is useful to
+the runtime, once it has been knitted out of the "]
+literal_76 -> leaf_81
+leaf_81  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_77 -> leaf_82
+leaf_82  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory by "]
+literal_78 -> leaf_83
+leaf_83  [color=Gray,shape=rectangle,fontname=Inconsolata,label="grym"]
+raw_79 -> leaf_84
+leaf_84  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".
+"]
+prose_55 -> { raw_85 literal_86 raw_87 literal_88 raw_89 italic_90 raw_91}
+{rank=same; raw_85 literal_86 raw_87 literal_88 raw_89 italic_90 raw_91}
+
+raw_85 [label="raw"]
+
+literal_86 [label="literal"]
+
+raw_87 [label="raw"]
+
+literal_88 [label="literal"]
+
+raw_89 [label="raw"]
+
+italic_90 [label="italic"]
+
+raw_91 [label="raw"]
+
+
+raw_85 -> leaf_92
+leaf_92  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Codices tend to be like libraries or like programs.  For a program, the 
+format is "]
+literal_86 -> leaf_93
+leaf_93  [color=Gray,shape=rectangle,fontname=Inconsolata,label="name/name"]
+raw_87 -> leaf_94
+leaf_94  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", for a library, an alternative is "]
+literal_88 -> leaf_95
+leaf_95  [color=Gray,shape=rectangle,fontname=Inconsolata,label="name/src/name/"]
+raw_89 -> leaf_96
+leaf_96  [color=Gray,shape=rectangle,fontname=Inconsolata,label=",
+and"]
+italic_90 -> leaf_97
+leaf_97  [color=Gray,shape=rectangle,fontname=Inconsolata,label="or =name"]
+raw_91 -> leaf_98
+leaf_98  [color=Gray,shape=rectangle,fontname=Inconsolata,label="src/name.ext=.  This is handy for codicies which happen to be
+both.
+"]
+prose_56 -> { raw_99 literal_100 raw_101 literal_102 raw_103}
+{rank=same; raw_99 literal_100 raw_101 literal_102 raw_103}
+
+raw_99 [label="raw"]
+
+literal_100 [label="literal"]
+
+raw_101 [label="raw"]
+
+literal_102 [label="literal"]
+
+raw_103 [label="raw"]
+
+
+raw_99 -> leaf_104
+leaf_104  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+In order to support the delicate operation of wrapping existing codebases
+into codex format, "]
+literal_100 -> leaf_105
+leaf_105  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_101 -> leaf_106
+leaf_106  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" can be the only source of truth. In this case
+the "]
+literal_102 -> leaf_107
+leaf_107  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_103 -> leaf_108
+leaf_108  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory will either be empty, or contain only dotfiles. 
+"]
+prose_57 -> { raw_109 literal_110 raw_111 bold_112 raw_113 literal_114 raw_115 literal_116 raw_117}
+{rank=same; raw_109 literal_110 raw_111 bold_112 raw_113 literal_114 raw_115 literal_116 raw_117}
+
+raw_109 [label="raw"]
+
+literal_110 [label="literal"]
+
+raw_111 [label="raw"]
+
+bold_112 [label="bold"]
+
+raw_113 [label="raw"]
+
+literal_114 [label="literal"]
+
+raw_115 [label="raw"]
+
+literal_116 [label="literal"]
+
+raw_117 [label="raw"]
+
+
+raw_109 -> leaf_118
+leaf_118  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+A corrolary of this is that "]
+literal_110 -> leaf_119
+leaf_119  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_111 -> leaf_120
+leaf_120  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", discussed below, does not have
+to follow the format described here.  It "]
+bold_112 -> leaf_121
+leaf_121  [color=Gray,shape=rectangle,fontname=Inconsolata,label="should"]
+raw_113 -> leaf_122
+leaf_122  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", mind you.  Using "]
+literal_114 -> leaf_123
+leaf_123  [color=Gray,shape=rectangle,fontname=Inconsolata,label="grym"]
+raw_115 -> leaf_124
+leaf_124  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+to provide a shallow wrapper around the format is not recondite unless your
+tooling is allergic to symlinks; "]
+literal_116 -> leaf_125
+leaf_125  [color=Gray,shape=rectangle,fontname=Inconsolata,label="grym invert"]
+raw_117 -> leaf_126
+leaf_126  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is intended to be developed
+enough to sort these issues out before alpha release.
+
+"]
+section_9 -> { header_127 prose_128 prose_129 prose_130 prose_131 prose_132 prose_133 section_134}
+{rank=same; header_127 prose_128 prose_129 prose_130 prose_131 prose_132 prose_133 section_134}
+
+header_127 [label="2 : lib"]
+
+prose_128 [label="prose"]
+
+prose_129 [label="prose"]
+
+prose_130 [label="prose"]
+
+prose_131 [label="prose"]
+
+prose_132 [label="prose"]
+
+prose_133 [label="prose"]
+
+section_134 [label="section: 89-163"]
+
+
+header_127 -> leaf_135
+leaf_135  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** lib"]
+prose_128 -> { raw_136 literal_137 raw_138 literal_139 raw_140 literal_141 raw_142 literal_143 raw_144}
+{rank=same; raw_136 literal_137 raw_138 literal_139 raw_140 literal_141 raw_142 literal_143 raw_144}
+
+raw_136 [label="raw"]
+
+literal_137 [label="literal"]
+
+raw_138 [label="raw"]
+
+literal_139 [label="literal"]
+
+raw_140 [label="raw"]
+
+literal_141 [label="literal"]
+
+raw_142 [label="raw"]
+
+literal_143 [label="literal"]
+
+raw_144 [label="raw"]
+
+
+raw_136 -> leaf_145
+leaf_145  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  All dependencies for "]
+literal_137 -> leaf_146
+leaf_146  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_138 -> leaf_147
+leaf_147  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" are to be found at "]
+literal_139 -> leaf_148
+leaf_148  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib/"]
+raw_140 -> leaf_149
+leaf_149  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", a symlink to"]
+literal_141 -> leaf_150
+leaf_150  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_142 -> leaf_151
+leaf_151  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".  This is a subtlety.  "]
+literal_143 -> leaf_152
+leaf_152  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_144 -> leaf_153
+leaf_153  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" itself has one directory per dependency,
+which in a normal bridge install will themselves be symlinks. 
+"]
+prose_129 -> { raw_154 italic_155 raw_156 literal_157 raw_158}
+{rank=same; raw_154 italic_155 raw_156 literal_157 raw_158}
+
+raw_154 [label="raw"]
+
+italic_155 [label="italic"]
+
+raw_156 [label="raw"]
+
+literal_157 [label="literal"]
+
+raw_158 [label="raw"]
+
+
+raw_154 -> leaf_159
+leaf_159  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+One reason is that \"src"]
+italic_155 -> leaf_160
+leaf_160  [color=Gray,shape=rectangle,fontname=Inconsolata,label="lib\" is a simple literal string, while \".."]
+raw_156 -> leaf_161
+leaf_161  [color=Gray,shape=rectangle,fontname=Inconsolata,label="lib\" is a
+description, with a verb, "]
+literal_157 -> leaf_162
+leaf_162  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".."]
+raw_158 -> leaf_163
+leaf_163  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", that is appreciably harder to reason about. 
+"]
+prose_130 -> { raw_164 literal_165 raw_166}
+{rank=same; raw_164 literal_165 raw_166}
+
+raw_164 [label="raw"]
+
+literal_165 [label="literal"]
+
+raw_166 [label="raw"]
+
+
+raw_164 -> leaf_167
+leaf_167  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Another is that it's a brown M & M. One way to make sure you don't make poor
+assumptions about filesystems being literal is to make a mandatory symlink part
+of the description format for programs.  It gives "]
+literal_165 -> leaf_168
+leaf_168  [color=Gray,shape=rectangle,fontname=Inconsolata,label="bridge"]
+raw_166 -> leaf_169
+leaf_169  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" tools something to
+look for, when deciding what to do.
+"]
+prose_131 -> { raw_170 literal_171 raw_172 literal_173 raw_174 literal_175 raw_176 literal_177 raw_178 literal_179 raw_180 literal_181 raw_182}
+{rank=same; raw_170 literal_171 raw_172 literal_173 raw_174 literal_175 raw_176 literal_177 raw_178 literal_179 raw_180 literal_181 raw_182}
+
+raw_170 [label="raw"]
+
+literal_171 [label="literal"]
+
+raw_172 [label="raw"]
+
+literal_173 [label="literal"]
+
+raw_174 [label="raw"]
+
+literal_175 [label="literal"]
+
+raw_176 [label="raw"]
+
+literal_177 [label="literal"]
+
+raw_178 [label="raw"]
+
+literal_179 [label="literal"]
+
+raw_180 [label="raw"]
+
+literal_181 [label="literal"]
+
+raw_182 [label="raw"]
+
+
+raw_170 -> leaf_183
+leaf_183  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+In the end, I want "]
+literal_171 -> leaf_184
+leaf_184  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_172 -> leaf_185
+leaf_185  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_173 -> leaf_186
+leaf_186  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_174 -> leaf_187
+leaf_187  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", and I want them to be identical, so
+that's how it is. Since "]
+literal_175 -> leaf_188
+leaf_188  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_176 -> leaf_189
+leaf_189  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is the base directory from the code's 
+perspective, "]
+literal_177 -> leaf_190
+leaf_190  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_178 -> leaf_191
+leaf_191  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" gives you the dependencies directly, and keeps the "]
+literal_179 -> leaf_192
+leaf_192  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_180 -> leaf_193
+leaf_193  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+and "]
+literal_181 -> leaf_194
+leaf_194  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/doc"]
+raw_182 -> leaf_195
+leaf_195  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" out of the way; not hidden, just that a normal program won't refer
+to them or affect them.
+"]
+prose_132 -> { raw_196 literal_197 raw_198 literal_199 raw_200 literal_201 raw_202}
+{rank=same; raw_196 literal_197 raw_198 literal_199 raw_200 literal_201 raw_202}
+
+raw_196 [label="raw"]
+
+literal_197 [label="literal"]
+
+raw_198 [label="raw"]
+
+literal_199 [label="literal"]
+
+raw_200 [label="raw"]
+
+literal_201 [label="literal"]
+
+raw_202 [label="raw"]
+
+
+raw_196 -> leaf_203
+leaf_203  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Quirks are useful.  There's not much bandwidth in a filesystem with which to 
+signal. A directory called "]
+literal_197 -> leaf_204
+leaf_204  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_198 -> leaf_205
+leaf_205  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" under "]
+literal_199 -> leaf_206
+leaf_206  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_200 -> leaf_207
+leaf_207  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" could be anything, if it
+resolves to the same absolute path as "]
+literal_201 -> leaf_208
+leaf_208  [color=Gray,shape=rectangle,fontname=Inconsolata,label="../lib"]
+raw_202 -> leaf_209
+leaf_209  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", the likelihood we're dealing
+with a codex goes up. 
+"]
+prose_133 -> { raw_210}
+{rank=same; raw_210}
+
+raw_210 [label="raw"]
+
+
+raw_210 -> leaf_211
+leaf_211  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Important note: Codices can include circular dependencies, please do not 
+naively search them depth-first. 
+
+"]
+section_134 -> { header_212 prose_213 structure_214 prose_215 codeblock_216 prose_217 structure_218 prose_219 prose_220 prose_221 prose_222 structure_223 prose_224 prose_225}
+{rank=same; header_212 prose_213 structure_214 prose_215 codeblock_216 prose_217 structure_218 prose_219 prose_220 prose_221 prose_222 structure_223 prose_224 prose_225}
+
+header_212 [label="3 : A further subtlety of /lib"]
+
+prose_213 [label="prose"]
+
+structure_214 [label="structure"]
+
+prose_215 [label="prose"]
+
+codeblock_216 [label="code block 108-110"]
+
+prose_217 [label="prose"]
+
+structure_218 [label="structure"]
+
+prose_219 [label="prose"]
+
+prose_220 [label="prose"]
+
+prose_221 [label="prose"]
+
+prose_222 [label="prose"]
+
+structure_223 [label="structure"]
+
+prose_224 [label="prose"]
+
+prose_225 [label="prose"]
+
+
+header_212 -> leaf_226
+leaf_226  [color=Gray,shape=rectangle,fontname=Inconsolata,label="*** A further subtlety of /lib"]
+prose_213 -> { raw_227 literal_228 raw_229}
+{rank=same; raw_227 literal_228 raw_229}
+
+raw_227 [label="raw"]
+
+literal_228 [label="literal"]
+
+raw_229 [label="raw"]
+
+
+raw_227 -> leaf_230
+leaf_230  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+Let us say we have a library, also in a codex, which is called "]
+literal_228 -> leaf_231
+leaf_231  [color=Gray,shape=rectangle,fontname=Inconsolata,label="numbers"]
+raw_229 -> leaf_232
+leaf_232  [color=Gray,shape=rectangle,fontname=Inconsolata,label=". It
+would have a format such as this:
+"]
+structure_214 -> { hashline_233}
+{rank=same; hashline_233}
+
+hashline_233 [label="hashline"]
+
+
+hashline_233 -> { hashtag_234}
+{rank=same; hashtag_234}
+
+hashtag_234 [label="hashtag"]
+
+
+hashtag_234 -> leaf_235
+leaf_235  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+prose_215 -> { raw_236 literal_237 raw_238}
+{rank=same; raw_236 literal_237 raw_238}
+
+raw_236 [label="raw"]
+
+literal_237 [label="literal"]
+
+raw_238 [label="raw"]
+
+
+raw_236 -> leaf_239
+leaf_239  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+this fashion, presuming that "]
+literal_237 -> leaf_240
+leaf_240  [color=Gray,shape=rectangle,fontname=Inconsolata,label="."]
+raw_238 -> leaf_241
+leaf_241  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" contains both directories:
+"]
+codeblock_216 -> leaf_242
+leaf_242  [color=Gray,shape=rectangle,fontname=Inconsolata,label="ln -s ./numbers/src/ ./genesis/lib/numbers"]
+prose_217 -> { raw_243}
+{rank=same; raw_243}
+
+raw_243 [label="raw"]
+
+
+raw_243 -> leaf_244
+leaf_244  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+With this result:
+"]
+structure_218 -> { hashline_245}
+{rank=same; hashline_245}
+
+hashline_245 [label="hashline"]
+
+
+hashline_245 -> { hashtag_246}
+{rank=same; hashtag_246}
+
+hashtag_246 [label="hashtag"]
+
+
+hashtag_246 -> leaf_247
+leaf_247  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+prose_219 -> { raw_248}
+{rank=same; raw_248}
+
+raw_248 [label="raw"]
+
+
+raw_248 -> leaf_249
+leaf_249  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+is locally shadowed, \"lib/numbers\". 
+"]
+prose_220 -> { raw_250 literal_251 raw_252}
+{rank=same; raw_250 literal_251 raw_252}
+
+raw_250 [label="raw"]
+
+literal_251 [label="literal"]
+
+raw_252 [label="raw"]
+
+
+raw_250 -> leaf_253
+leaf_253  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Note that we intend to write a friendly tool, "]
+literal_251 -> leaf_254
+leaf_254  [color=Gray,shape=rectangle,fontname=Inconsolata,label="manifest"]
+raw_252 -> leaf_255
+leaf_255  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", which will automate,
+or at least smooth out, this process. 
+"]
+prose_221 -> { raw_256 literal_257 raw_258}
+{rank=same; raw_256 literal_257 raw_258}
+
+raw_256 [label="raw"]
+
+literal_257 [label="literal"]
+
+raw_258 [label="raw"]
+
+
+raw_256 -> leaf_259
+leaf_259  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+For now, let's note some of the advantages of this approach.  One may readily
+pin a library, provided some snapshot revision control system such as "]
+literal_257 -> leaf_260
+leaf_260  [color=Gray,shape=rectangle,fontname=Inconsolata,label="git"]
+raw_258 -> leaf_261
+leaf_261  [color=Gray,shape=rectangle,fontname=Inconsolata,label=",
+by simply symlinking to the blob in question.
+"]
+prose_222 -> { raw_262 literal_263 raw_264}
+{rank=same; raw_262 literal_263 raw_264}
+
+raw_262 [label="raw"]
+
+literal_263 [label="literal"]
+
+raw_264 [label="raw"]
+
+
+raw_262 -> leaf_265
+leaf_265  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+In addition, "]
+literal_263 -> leaf_266
+leaf_266  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/genesis"]
+raw_264 -> leaf_267
+leaf_267  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" may be expanded thus:
+"]
+structure_223 -> { hashline_268}
+{rank=same; hashline_268}
+
+hashline_268 [label="hashline"]
+
+
+hashline_268 -> { hashtag_269}
+{rank=same; hashtag_269}
+
+hashtag_269 [label="hashtag"]
+
+
+hashtag_269 -> leaf_270
+leaf_270  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+prose_224 -> { raw_271 literal_272 raw_273 literal_274 raw_275 literal_276 raw_277}
+{rank=same; raw_271 literal_272 raw_273 literal_274 raw_275 literal_276 raw_277}
+
+raw_271 [label="raw"]
+
+literal_272 [label="literal"]
+
+raw_273 [label="raw"]
+
+literal_274 [label="literal"]
+
+raw_275 [label="raw"]
+
+literal_276 [label="literal"]
+
+raw_277 [label="raw"]
+
+
+raw_271 -> leaf_278
+leaf_278  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+literal_272 -> leaf_279
+leaf_279  [color=Gray,shape=rectangle,fontname=Inconsolata,label="./numbers/lib"]
+raw_273 -> leaf_280
+leaf_280  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".  The elision of "]
+literal_274 -> leaf_281
+leaf_281  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_275 -> leaf_282
+leaf_282  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is thus fairly well-behaved in
+practice.  If directories in "]
+literal_276 -> leaf_283
+leaf_283  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_277 -> leaf_284
+leaf_284  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" are themselves in codex format this
+may be readily checked and taken advantage of.
+"]
+prose_225 -> { raw_285 literal_286 raw_287 literal_288 raw_289}
+{rank=same; raw_285 literal_286 raw_287 literal_288 raw_289}
+
+raw_285 [label="raw"]
+
+literal_286 [label="literal"]
+
+raw_287 [label="raw"]
+
+literal_288 [label="literal"]
+
+raw_289 [label="raw"]
+
+
+raw_285 -> leaf_290
+leaf_290  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+There should be no assumption that directories under "]
+literal_286 -> leaf_291
+leaf_291  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_287 -> leaf_292
+leaf_292  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" are symlinks,
+nor, if they happen to be, that they are codex "]
+literal_288 -> leaf_293
+leaf_293  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_289 -> leaf_294
+leaf_294  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directories under
+their project name. 
+
+"]
+section_10 -> { header_295 prose_296 prose_297 prose_298}
+{rank=same; header_295 prose_296 prose_297 prose_298}
+
+header_295 [label="2 : doc"]
+
+prose_296 [label="prose"]
+
+prose_297 [label="prose"]
+
+prose_298 [label="prose"]
+
+
+header_295 -> leaf_299
+leaf_299  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** doc"]
+prose_296 -> { raw_300}
+{rank=same; raw_300}
+
+raw_300 [label="raw"]
+
+
+raw_300 -> leaf_301
+leaf_301  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  This contains the weave or weaves.  This is itself an opinionated use of HTML
+and friends.  A back end responsible for assembling some web view can stick its
+product anywhere it chooses; if it's in codex format, the documentation view of the source code will go here.
+"]
+prose_297 -> { raw_302 literal_303 raw_304 literal_305 raw_306 literal_307 raw_308 literal_309 raw_310}
+{rank=same; raw_302 literal_303 raw_304 literal_305 raw_306 literal_307 raw_308 literal_309 raw_310}
+
+raw_302 [label="raw"]
+
+literal_303 [label="literal"]
+
+raw_304 [label="raw"]
+
+literal_305 [label="literal"]
+
+raw_306 [label="raw"]
+
+literal_307 [label="literal"]
+
+raw_308 [label="raw"]
+
+literal_309 [label="literal"]
+
+raw_310 [label="raw"]
+
+
+raw_302 -> leaf_311
+leaf_311  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+The subdirectories of "]
+literal_303 -> leaf_312
+leaf_312  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/doc"]
+raw_304 -> leaf_313
+leaf_313  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" have names like "]
+literal_305 -> leaf_314
+leaf_314  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/html"]
+raw_306 -> leaf_315
+leaf_315  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", "]
+literal_307 -> leaf_316
+leaf_316  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/md"]
+raw_308 -> leaf_317
+leaf_317  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", or "]
+literal_309 -> leaf_318
+leaf_318  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/pdf"]
+raw_310 -> leaf_319
+leaf_319  [color=Gray,shape=rectangle,fontname=Inconsolata,label=". These
+are the main suffixes you would expect to find, to be sure, but refer to 
+compilation targets rather than text formats per se. 
+"]
+prose_298 -> { raw_320 literal_321 raw_322}
+{rank=same; raw_320 literal_321 raw_322}
+
+raw_320 [label="raw"]
+
+literal_321 [label="literal"]
+
+raw_322 [label="raw"]
+
+
+raw_320 -> leaf_323
+leaf_323  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+The root for an html weave of Genesis could be expected to be found at "]
+literal_321 -> leaf_324
+leaf_324  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/genesis/doc/html/genesis.html"]
+raw_322 -> leaf_325
+leaf_325  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", and so forth. 
+
+"]
+section_11 -> { header_326 prose_327}
+{rank=same; header_326 prose_327}
+
+header_326 [label="2 : etc"]
+
+prose_327 [label="prose"]
+
+
+header_326 -> leaf_328
+leaf_328  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** etc"]
+prose_327 -> { raw_329}
+{rank=same; raw_329}
+
+raw_329 [label="raw"]
+
+
+raw_329 -> leaf_330
+leaf_330  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  Is the first example of an optional codex directory.  It's always good to
+have a junk drawer.  Think of it as a lightweight container for assets.  If
+a codex just needs a few binaries of the non-executable variety, toss them in
+here.
+"]
+section_12 -> { header_331 prose_332 prose_333 prose_334 structure_335 section_336}
+{rank=same; header_331 prose_332 prose_333 prose_334 structure_335 section_336}
+
+header_331 [label="2 : out"]
+
+prose_332 [label="prose"]
+
+prose_333 [label="prose"]
+
+prose_334 [label="prose"]
+
+structure_335 [label="structure"]
+
+section_336 [label="section: 221-239"]
+
+
+header_331 -> leaf_337
+leaf_337  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** out"]
+prose_332 -> { raw_338 literal_339 raw_340 literal_341 raw_342 literal_343 raw_344}
+{rank=same; raw_338 literal_339 raw_340 literal_341 raw_342 literal_343 raw_344}
+
+raw_338 [label="raw"]
+
+literal_339 [label="literal"]
+
+raw_340 [label="raw"]
+
+literal_341 [label="literal"]
+
+raw_342 [label="raw"]
+
+literal_343 [label="literal"]
+
+raw_344 [label="raw"]
+
+
+raw_338 -> leaf_345
+leaf_345  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  "]
+literal_339 -> leaf_346
+leaf_346  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/out"]
+raw_340 -> leaf_347
+leaf_347  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is likely enough to recur to deserve its own section.  Mostly to 
+emphasize that a codex which consists mostly of prose might have a weave
+prepared so as to be consumed by another program, as is usual in static or
+other site generation.  This would be in "]
+literal_341 -> leaf_348
+leaf_348  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/out"]
+raw_342 -> leaf_349
+leaf_349  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", while the various "]
+literal_343 -> leaf_350
+leaf_350  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/doc"]
+raw_344 -> leaf_351
+leaf_351  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+weaves are intended for a pre-compilation view of the raw content.
+"]
+prose_333 -> { raw_352}
+{rank=same; raw_352}
+
+raw_352 [label="raw"]
+
+
+raw_352 -> leaf_353
+leaf_353  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Things like RSS feeds, temporal views, tag enhancement, search bars,
+anything of that nature. 
+"]
+prose_334 -> { raw_354 literal_355 raw_356 literal_357 raw_358}
+{rank=same; raw_354 literal_355 raw_356 literal_357 raw_358}
+
+raw_354 [label="raw"]
+
+literal_355 [label="literal"]
+
+raw_356 [label="raw"]
+
+literal_357 [label="literal"]
+
+raw_358 [label="raw"]
+
+
+raw_354 -> leaf_359
+leaf_359  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+One may envision a project folder "]
+literal_355 -> leaf_360
+leaf_360  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/fodder"]
+raw_356 -> leaf_361
+leaf_361  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" which has only blog posts in it,
+which might look like this, where "]
+literal_357 -> leaf_362
+leaf_362  [color=Gray,shape=rectangle,fontname=Inconsolata,label="."]
+raw_358 -> leaf_363
+leaf_363  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" indicates a directory has no files:
+"]
+structure_335 -> { hashline_364}
+{rank=same; hashline_364}
+
+hashline_364 [label="hashline"]
+
+
+hashline_364 -> { hashtag_365}
+{rank=same; hashtag_365}
+
+hashtag_365 [label="hashtag"]
+
+
+hashtag_365 -> leaf_366
+leaf_366  [color=Gray,shape=rectangle,fontname=Inconsolata,label=""]
+section_336 -> { header_367 prose_368 prose_369 prose_370 prose_371}
+{rank=same; header_367 prose_368 prose_369 prose_370 prose_371}
+
+header_367 [label="3 : etc etc"]
+
+prose_368 [label="prose"]
+
+prose_369 [label="prose"]
+
+prose_370 [label="prose"]
+
+prose_371 [label="prose"]
+
+
+header_367 -> leaf_372
+leaf_372  [color=Gray,shape=rectangle,fontname=Inconsolata,label="*** etc etc"]
+prose_368 -> { raw_373 literal_374 raw_375 literal_376 raw_377 literal_378 raw_379}
+{rank=same; raw_373 literal_374 raw_375 literal_376 raw_377 literal_378 raw_379}
+
+raw_373 [label="raw"]
+
+literal_374 [label="literal"]
+
+raw_375 [label="raw"]
+
+literal_376 [label="literal"]
+
+raw_377 [label="raw"]
+
+literal_378 [label="literal"]
+
+raw_379 [label="raw"]
+
+
+raw_373 -> leaf_380
+leaf_380  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  I'd rather you stick to three letters, but don't intend that my tools will
+burn your barn and salt your fields if you don't. "]
+literal_374 -> leaf_381
+leaf_381  [color=Gray,shape=rectangle,fontname=Inconsolata,label="manifest"]
+raw_375 -> leaf_382
+leaf_382  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_376 -> leaf_383
+leaf_383  [color=Gray,shape=rectangle,fontname=Inconsolata,label="bridge"]
+raw_377 -> leaf_384
+leaf_384  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" only
+need an "]
+literal_378 -> leaf_385
+leaf_385  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_379 -> leaf_386
+leaf_386  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory and will try and step lightly around any weirdly 
+structured directories of the other names, but no promises. 
+"]
+prose_369 -> { raw_387 literal_388 raw_389 literal_390 raw_391 literal_392 raw_393}
+{rank=same; raw_387 literal_388 raw_389 literal_390 raw_391 literal_392 raw_393}
+
+raw_387 [label="raw"]
+
+literal_388 [label="literal"]
+
+raw_389 [label="raw"]
+
+literal_390 [label="literal"]
+
+raw_391 [label="raw"]
+
+literal_392 [label="literal"]
+
+raw_393 [label="raw"]
+
+
+raw_387 -> leaf_394
+leaf_394  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+The premise is that if you have a few images and icons, they can go directly
+into "]
+literal_388 -> leaf_395
+leaf_395  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/etc"]
+raw_389 -> leaf_396
+leaf_396  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" or in "]
+literal_390 -> leaf_397
+leaf_397  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/etc/img"]
+raw_391 -> leaf_398
+leaf_398  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", as you please, while a codex with a whole work
+history of hand-crafted image binaries would want a root-level "]
+literal_392 -> leaf_399
+leaf_399  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/img"]
+raw_393 -> leaf_400
+leaf_400  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" 
+directory to organize that.
+"]
+prose_370 -> { raw_401 literal_402 raw_403 literal_404 raw_405 literal_406 raw_407}
+{rank=same; raw_401 literal_402 raw_403 literal_404 raw_405 literal_406 raw_407}
+
+raw_401 [label="raw"]
+
+literal_402 [label="literal"]
+
+raw_403 [label="raw"]
+
+literal_404 [label="literal"]
+
+raw_405 [label="raw"]
+
+literal_406 [label="literal"]
+
+raw_407 [label="raw"]
+
+
+raw_401 -> leaf_408
+leaf_408  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+I expect there will be projects for which a top-level "]
+literal_402 -> leaf_409
+leaf_409  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/bin"]
+raw_403 -> leaf_410
+leaf_410  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is also
+appropriate. "]
+literal_404 -> leaf_411
+leaf_411  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/tmp"]
+raw_405 -> leaf_412
+leaf_412  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_406 -> leaf_413
+leaf_413  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/log"]
+raw_407 -> leaf_414
+leaf_414  [color=Gray,shape=rectangle,fontname=Inconsolata,label=", naturally, will show up from time to time. 
+"]
+prose_371 -> { raw_415}
+{rank=same; raw_415}
+
+raw_415 [label="raw"]
+
+
+raw_415 -> leaf_416
+leaf_416  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+I should probably add some kind of dotfile at the root without which the
+bettertools will refuse to recursively mangle a filesystem.  Hmm.
+
+"]
+section_13 -> { header_417 prose_418 prose_419 prose_420 section_421}
+{rank=same; header_417 prose_418 prose_419 prose_420 section_421}
+
+header_417 [label="2 : (assert is-codex?)"]
+
+prose_418 [label="prose"]
+
+prose_419 [label="prose"]
+
+prose_420 [label="prose"]
+
+section_421 [label="section: 256-269"]
+
+
+header_417 -> leaf_422
+leaf_422  [color=Gray,shape=rectangle,fontname=Inconsolata,label="** (assert is-codex?)"]
+prose_418 -> { raw_423 literal_424 raw_425 literal_426 raw_427 literal_428 raw_429 literal_430 raw_431 literal_432 raw_433 literal_434 raw_435}
+{rank=same; raw_423 literal_424 raw_425 literal_426 raw_427 literal_428 raw_429 literal_430 raw_431 literal_432 raw_433 literal_434 raw_435}
+
+raw_423 [label="raw"]
+
+literal_424 [label="literal"]
+
+raw_425 [label="raw"]
+
+literal_426 [label="literal"]
+
+raw_427 [label="raw"]
+
+literal_428 [label="literal"]
+
+raw_429 [label="raw"]
+
+literal_430 [label="literal"]
+
+raw_431 [label="raw"]
+
+literal_432 [label="literal"]
+
+raw_433 [label="raw"]
+
+literal_434 [label="literal"]
+
+raw_435 [label="raw"]
+
+
+raw_423 -> leaf_436
+leaf_436  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+
+  If a directory has an "]
+literal_424 -> leaf_437
+leaf_437  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_425 -> leaf_438
+leaf_438  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory, a "]
+literal_426 -> leaf_439
+leaf_439  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src"]
+raw_427 -> leaf_440
+leaf_440  [color=Gray,shape=rectangle,fontname=Inconsolata,label="  directory, a "]
+literal_428 -> leaf_441
+leaf_441  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_429 -> leaf_442
+leaf_442  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+directory, and a "]
+literal_430 -> leaf_443
+leaf_443  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_431 -> leaf_444
+leaf_444  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory, and the "]
+literal_432 -> leaf_445
+leaf_445  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_433 -> leaf_446
+leaf_446  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_434 -> leaf_447
+leaf_447  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_435 -> leaf_448
+leaf_448  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" 
+directories are the same entity, my tools will conclude they are in a 
+familiar environment and... do things. 
+"]
+prose_419 -> { raw_449 literal_450 raw_451 literal_452 raw_453 literal_454 raw_455 literal_456 raw_457 literal_458 raw_459}
+{rank=same; raw_449 literal_450 raw_451 literal_452 raw_453 literal_454 raw_455 literal_456 raw_457 literal_458 raw_459}
+
+raw_449 [label="raw"]
+
+literal_450 [label="literal"]
+
+raw_451 [label="raw"]
+
+literal_452 [label="literal"]
+
+raw_453 [label="raw"]
+
+literal_454 [label="literal"]
+
+raw_455 [label="raw"]
+
+literal_456 [label="literal"]
+
+raw_457 [label="raw"]
+
+literal_458 [label="literal"]
+
+raw_459 [label="raw"]
+
+
+raw_449 -> leaf_460
+leaf_460  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+There need be no contents.  It's also allowable that both "]
+literal_450 -> leaf_461
+leaf_461  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_451 -> leaf_462
+leaf_462  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and"]
+literal_452 -> leaf_463
+leaf_463  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_453 -> leaf_464
+leaf_464  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" exist provided "]
+literal_454 -> leaf_465
+leaf_465  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_455 -> leaf_466
+leaf_466  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is empty, or even for "]
+literal_456 -> leaf_467
+leaf_467  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_457 -> leaf_468
+leaf_468  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" to be the symlink
+to "]
+literal_458 -> leaf_469
+leaf_469  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_459 -> leaf_470
+leaf_470  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".
+"]
+prose_420 -> { raw_471 literal_472 raw_473 literal_474 raw_475}
+{rank=same; raw_471 literal_472 raw_473 literal_474 raw_475}
+
+raw_471 [label="raw"]
+
+literal_472 [label="literal"]
+
+raw_473 [label="raw"]
+
+literal_474 [label="literal"]
+
+raw_475 [label="raw"]
+
+
+raw_471 -> leaf_476
+leaf_476  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+Any other condition, particularly "]
+literal_472 -> leaf_477
+leaf_477  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_473 -> leaf_478
+leaf_478  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" being a literal directory while"]
+literal_474 -> leaf_479
+leaf_479  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_475 -> leaf_480
+leaf_480  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" is a different one with contents, is not a codex. 
+
+
+"]
+section_421 -> { header_481 prose_482 prose_483 prose_484 prose_485}
+{rank=same; header_481 prose_482 prose_483 prose_484 prose_485}
+
+header_481 [label="3 : grym files"]
+
+prose_482 [label="prose"]
+
+prose_483 [label="prose"]
+
+prose_484 [label="prose"]
+
+prose_485 [label="prose"]
+
+
+header_481 -> leaf_486
+leaf_486  [color=Gray,shape=rectangle,fontname=Inconsolata,label="*** grym files"]
+prose_482 -> { raw_487 literal_488 raw_489 literal_490 raw_491}
+{rank=same; raw_487 literal_488 raw_489 literal_490 raw_491}
+
+raw_487 [label="raw"]
+
+literal_488 [label="literal"]
+
+raw_489 [label="raw"]
+
+literal_490 [label="literal"]
+
+raw_491 [label="raw"]
+
+
+raw_487 -> leaf_492
+leaf_492  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+"]
+literal_488 -> leaf_493
+leaf_493  [color=Gray,shape=rectangle,fontname=Inconsolata,label="bridge"]
+raw_489 -> leaf_494
+leaf_494  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" shouldn't absolutely require that a codex-compliant directory
+involve "]
+literal_490 -> leaf_495
+leaf_495  [color=Gray,shape=rectangle,fontname=Inconsolata,label="grym"]
+raw_491 -> leaf_496
+leaf_496  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" in any capacity.  This is still the normal state of affairs.
+"]
+prose_483 -> { raw_497 literal_498 raw_499 literal_500 raw_501}
+{rank=same; raw_497 literal_498 raw_499 literal_500 raw_501}
+
+raw_497 [label="raw"]
+
+literal_498 [label="literal"]
+
+raw_499 [label="raw"]
+
+literal_500 [label="literal"]
+
+raw_501 [label="raw"]
+
+
+raw_497 -> leaf_502
+leaf_502  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+The additional criteria are a "]
+literal_498 -> leaf_503
+leaf_503  [color=Gray,shape=rectangle,fontname=Inconsolata,label=".grymrc"]
+raw_499 -> leaf_504
+leaf_504  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" file at the root, and that's it. 
+A "]
+literal_500 -> leaf_505
+leaf_505  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/.grym"]
+raw_501 -> leaf_506
+leaf_506  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" directory is also reserved. 
+"]
+prose_484 -> { raw_507 literal_508 raw_509 literal_510 raw_511 literal_512 raw_513}
+{rank=same; raw_507 literal_508 raw_509 literal_510 raw_511 literal_512 raw_513}
+
+raw_507 [label="raw"]
+
+literal_508 [label="literal"]
+
+raw_509 [label="raw"]
+
+literal_510 [label="literal"]
+
+raw_511 [label="raw"]
+
+literal_512 [label="literal"]
+
+raw_513 [label="raw"]
+
+
+raw_507 -> leaf_514
+leaf_514  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+These aren't part of the core assertion because I want to support putting 
+an existing project in the sorcery drawer, adding an "]
+literal_508 -> leaf_515
+leaf_515  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/orb"]
+raw_509 -> leaf_516
+leaf_516  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" and "]
+literal_510 -> leaf_517
+leaf_517  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/lib"]
+raw_511 -> leaf_518
+leaf_518  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+and purling a "]
+literal_512 -> leaf_519
+leaf_519  [color=Gray,shape=rectangle,fontname=Inconsolata,label="/src/lib"]
+raw_513 -> leaf_520
+leaf_520  [color=Gray,shape=rectangle,fontname=Inconsolata,label=" to please the djinn, and letting that work.
+"]
+prose_485 -> { raw_521}
+{rank=same; raw_521}
+
+raw_521 [label="raw"]
+
+
+raw_521 -> leaf_522
+leaf_522  [color=Gray,shape=rectangle,fontname=Inconsolata,label="
+There is no need in such an instance to pretend the sorcery emanates from 
+the orb.  It may be enfolded or not, at leisure. "]
+
+}
