@@ -8,7 +8,19 @@ organized.
 The structure is [deliberately simple](#assert-is-codex).  Let us say we are
 writing an ingenium called Genesis.  We might have a structure like so:
 
-#!
+```dir
+- /genesis
+  - /orb
+  - /src
+  - /doc
+  - /lib
+  - /etc  
+  - genesis
+```
+
+We see that we have a directory, five subsidiaries, and an eponymous file.
+
+
 So far so good. 
 
 ## orb
@@ -93,7 +105,18 @@ naively search them depth-first.
 Let us say we have a library, also in a codex, which is called `````numbers`````. It
 would have a format such as this:
 
-#!
+```dir
+- /numbers
+  - /orb
+  - /src
+    - numbers.ext
+  - /doc
+  - /lib
+  - /etc
+  - numbers
+```
+
+In order to provide this as a library to `````genesis`````, we create a symlink in
 this fashion, presuming that `````.````` contains both directories:
 
 ```sh
@@ -102,7 +125,22 @@ ln -s ./numbers/src/ ./genesis/lib/numbers
 
 With this result:
 
-#!
+```dir
+- /genesis
+  - /orb
+  - /src
+    - /lib ↻
+      - /numbers
+        - numbers.ext
+  - /doc
+  - /lib
+    - /numbers
+      - numbers.ext
+  - /etc
+  - genesis
+```
+
+This allows `````require````` and friends to refer simply to "numbers", or if this
 is locally shadowed, "lib/numbers". 
 
 
@@ -117,7 +155,20 @@ by simply symlinking to the blob in question.
 
 In addition, `````/genesis````` may be expanded thus:
 
-#!
+```dir
+- /genesis
+  - /orb
+  - /src
+  - /doc
+  - /lib
+    - /numbers ↻
+      - /lib ↻
+      - numbers.ext
+  - /etc
+  - genesis
+```
+
+`````./genesis/lib/numbers/lib`````, followed, puts us in the actual directory
 `````./numbers/lib`````.  The elision of `````/src````` is thus fairly well-behaved in
 practice.  If directories in `````/lib````` are themselves in codex format this
 may be readily checked and taken advantage of.

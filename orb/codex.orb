@@ -7,7 +7,7 @@ organized.
 The structure is [deliberately simple](#assert-is-codex).  Let us say we are
 writing an ingenium called Genesis.  We might have a structure like so:
 
-#!
+#!dir
 - /genesis
   - /orb
   - /src
@@ -15,7 +15,7 @@ writing an ingenium called Genesis.  We might have a structure like so:
   - /lib
   - /etc  
   - genesis
-#/
+#/dir
 
 We see that we have a directory, five subsidiaries, and an eponymous file.
 
@@ -91,7 +91,7 @@ naively search them depth-first.
 Let us say we have a library, also in a codex, which is called =numbers=. It
 would have a format such as this:
 
-#!
+#!dir
 - /numbers
   - /orb
   - /src
@@ -100,7 +100,7 @@ would have a format such as this:
   - /lib
   - /etc
   - numbers
-#/
+#/dir
 
 In order to provide this as a library to =genesis=, we create a symlink in
 this fashion, presuming that =.= contains both directories:
@@ -111,7 +111,7 @@ ln -s ./numbers/src/ ./genesis/lib/numbers
 
 With this result:
 
-#!
+#!dir
 - /genesis
   - /orb
   - /src
@@ -124,7 +124,7 @@ With this result:
       - numbers.ext
   - /etc
   - genesis
-#/
+#/dir
 
 This allows =require= and friends to refer simply to "numbers", or if this
 is locally shadowed, "lib/numbers". 
@@ -138,7 +138,7 @@ by simply symlinking to the blob in question.
 
 In addition, =/genesis= may be expanded thus:
 
-#!
+#!dir
 - /genesis
   - /orb
   - /src
@@ -149,7 +149,7 @@ In addition, =/genesis= may be expanded thus:
       - numbers.ext
   - /etc
   - genesis
-#/
+#/dir
 
 =./genesis/lib/numbers/lib=, followed, puts us in the actual directory
 =./numbers/lib=.  The elision of =/src= is thus fairly well-behaved in
